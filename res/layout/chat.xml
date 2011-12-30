@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"
+        >
+
+    <LinearLayout
+                  android:layout_width="fill_parent"
+                  android:layout_height="fill_parent"
+                  android:orientation="vertical"
+                  android:padding="10dp"
+                  android:layout_margin="10dp"
+                  android:layout_gravity="center"
+                  android:background="@drawable/appbackground"
+            >
+
+        <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffcc"
+                android:cacheColorHint="#ffffcc"
+                android:id="@+id/chatData"
+                android:layout_weight="1"
+                android:transcriptMode="alwaysScroll"
+                android:layout_marginBottom="5dp"
+                />
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="3"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/messageboxbackground"
+                    android:paddingLeft="5dp"
+                    android:textSize="14sp"
+                    android:hint="Message"
+                    android:id="@+id/myMessage"/>
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonbackground"
+                    android:id="@+id/postMessage"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="8dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:drawableRight="@drawable/zap"
+                    android:text="Post"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
